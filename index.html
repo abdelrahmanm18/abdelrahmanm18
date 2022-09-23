@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr Code</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Qr code generator</h1>
+
+      <form>
+        <input
+          type="url"
+          id="websiteLink"
+          name="websiteLink"
+          placeholder="https://website.com"
+          requierd
+        />
+        <button type="button" onclick="generateQRCode()">
+          Generate Qr code
+        </button>
+      </form>
+
+      <div class="qrcode_container">
+        <div id="qrcode" class="qrcode"></div>
+      </div>
+      <script type="text/javascript"">
+        function generateQRCode(){
+            let websiteLink = document.getElementById("websiteLink").value;
+            if(websiteLink){
+                let qrcodeContainer = document.getElementById("qrcode");
+                qrcodeContainer.innerHTML = "";
+                new QRCode(qrcodeContainer, websiteLink);
+                document.getElementById('qrcode-container').style.display = "block";
+            }else{
+                alert('Enter valid URL BRUHH');
+            }
+        }
+
+      </script>
+    </div>
+  </body>
+</html>
