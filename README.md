@@ -1,7 +1,5 @@
 <h1 align="center">Hi 👋, I'm Abdelrahman Mohamed</h1>
-<h3 align="center">A mediocre CS student and passionate frontend developer from Egypt</h3>
-
-- 🌱 I’m currently learning **React**
+<h3 align="center">Computer Science graduate working in Customer Ops and can't stop thinking about JAVA/h3>
 
 - 📫 How to reach me **abdelrahmanfekryy2@gmail.com**
 
